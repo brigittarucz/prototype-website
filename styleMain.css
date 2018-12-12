@@ -1,0 +1,172 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    font-weight: 100;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+    grid-template-rows: 70px auto;
+}
+
+header {
+    grid-column: 1/span 6;
+    grid-row: 1/span 1;
+    background-color: #EA5045;
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr 60px;
+}
+
+header #kea {
+    width: 120px;
+    grid-column: 4/span 1;
+    margin: auto;
+}
+
+header #burgerMenu {
+    width: 40px;
+    margin: auto;
+    grid-column: 1/span 1;
+}
+
+header #messages {
+    width: 50px;
+    margin: auto;
+    grid-column: 5/span 1;
+}
+
+#bodyElements {
+    grid-column: 2/span 4;
+}
+
+h4 {
+    padding: 10px;
+    background-color: #EA5045;
+    color: white;
+}
+
+#boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10px 1fr 1fr;
+    grid-template-rows: 120px 10px 120px;
+    text-align: center;
+}
+#boxes p {
+    padding: 30px;
+    color: white;
+    font-size: 16px;
+}
+#boxChat {
+    grid-column: 1/span 2;
+    background-color: #8E7FAE;
+}
+
+#boxEvents {
+    grid-column: 4/span 2;
+    background-color: #0762C8;
+}
+
+#boxFriday {
+    grid-column: 1/span 2;
+    background-color: #56C271;
+    grid-row: 3/span 1;
+}
+
+#boxJobs {
+    grid-column: 4/span 2;
+    background-color: #FF671F;
+    grid-row: 3/span 1;
+}
+
+#scheduleButtons {
+    margin-top: -17px;
+    display: grid;
+    grid-template-columns: 35px auto 35px;
+}
+
+#scheduleButtons h4 {
+    grid-column: 2/span 1;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#scheduleButtons img {
+    width: 30px;
+}
+
+#scheduleButtons #one {
+    grid-column: 1/span 1;
+    margin-right: auto;
+}
+
+
+#scheduleButtons #two {
+    z-index: 1;
+    grid-column: 3/span 1;
+    margin-left: auto;
+}
+
+#scheduleDetails {
+    margin-top: -10px;
+    border: 1px solid black;
+    height: 210px;
+}
+
+#scheduleElem {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+
+#boxHandIn {
+    background-color: #0762C8;
+    padding: 10px;
+    margin-right: 20px;
+    color: white;
+}
+
+#alignButton {
+    text-align: center;
+}
+
+#scheduleElem button {
+    background-color: #0762C8;
+    border: 0px;
+    font-size: 32px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    color: white;
+    width: 140px;
+}
+
+#studyPlan {
+    margin-top: -10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+#studyPlan img {
+    width: 50px;
+    margin-top: 10px;
+}
+
+#teachingMat {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 60px 1fr 60px 70px;
+}
+
+#teachingMat img {
+    width: 40px;
+    margin: auto;
+}
+
+
+
