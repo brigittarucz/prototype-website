@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Main KEA </title>
     <link rel=stylesheet type="text/css" href="styleMain.css">
+
 </head>
 
 <body>
     <div id="wrapper">
         <header>
-            <img src="images/burgerMenu.png" id="burgerMenu">
+             <img src="images/burgerMenu.png" id="burgerMenu" onclick="toggleFunction()">
             <img src="images/kea12.png" id="kea">
             <img src="images/messages.png" id="messages">
         </header>
 
+            <div id="menu">
+           <div id="sideMenu" class="sideMenu2">
+            <div id="elemInsideMenu">
+             <div id="pictureCircle">
+
+             </div>
+               <h3> Daiana Nicoleta Raducu </h3>
+              <ul>
+                  <li> <a href="mainPage.html"> <b> Home </b> </a> </li> <hr>
+                  <li> <a href="#"> Notifications </a></li> <hr>
+                  <li> <a href="#"> Messages </a></li> <hr>
+                  <li> <a href="#"> Information </a></li> <hr>
+                  <li> <a href="settingsPage.html"> Settings </a></li> <hr>
+                  <li> <a href="#"> Help </a></li>
+               </ul>
+
+               <div id="logOutB">
+                   <button id="logOut"> <a href="index.html"> Log Out </a> </button>
+               </div>
+               </div>
+        </div>
+        </div>
         <div id="bodyElements">
+
             <h4> Your widgets </h4>
 
             <div id="boxes">
@@ -28,12 +52,18 @@
                 <div id="boxFriday">
                     <p> Friday Bar </p>
                 </div>
+
                 <div id="boxJobs">
-                    <p> Jobs and Internships </p>
+                  <a href="careerOpport.html" style="all:unset;">
+                   <button style="all: unset;">
+                    <p> Career </p>
+                    </button>
+                    </a>
                 </div>
+
             </div>
 
-            <h4> Schedule </h4>
+            <a href="schedule.html" style="all: unset;"> <h4> Schedule </h4> </a>
 
             <div id="scheduleButtons">
                 <img src="images/buttonLeft.png" id="one">
@@ -81,5 +111,6 @@
         </div>
 
     </div>
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>

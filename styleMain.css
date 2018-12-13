@@ -163,6 +163,7 @@ h4 {
     grid-template-columns: 60px 1fr 60px 70px;
 }
 
+
 #teachingMat img {
     width: 40px;
     margin: auto;
@@ -170,3 +171,106 @@ h4 {
 
 
 
+/* Side Menu */
+
+#menu {
+    display: none;
+}
+
+.sideMenu2 {
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    position: fixed;
+    border-right: 1px solid #202020;
+    animation: moveRight 0.5s 1 forwards;
+}
+
+#elemInsideMenu {
+    opacity: 0;
+     animation: opacity 0.5s 1 0.5s forwards;
+}
+
+.moveRight {
+    animation: moveRight 0.5s 1 forwards;
+}
+
+.opacityHigh {
+    animation: opacity 0.5s 1 0.5s forwards;
+}
+
+@keyframes moveRight {
+    from { width: 0px; }
+    to { width: 250px; }
+}
+
+@keyframes opacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#pictureCircle {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto ;
+    border-radius: 100px;
+    background-image: url(images/portraits.png);
+    background-position: center;
+    background-size: cover;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#sideMenu hr {
+    margin-left: -100px;
+    border: 0.5px solid white;
+    margin-top: 10px;
+}
+
+#logOutB a {
+    text-decoration: none;
+    color:white;
+}
+
+#sideMenu ul li a {
+    text-decoration: none;
+    padding-top: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+#logOut {
+    background-color: #EA5045;
+    border: 0px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    font-weight:200;
+}
+
+#logOutB {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Building User flow */
+
+#boxJobs {
+    opacity: 0;
+    animation: appearAnim 2s 1 forwards;
+}
+
+@keyframes appearAnim {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
